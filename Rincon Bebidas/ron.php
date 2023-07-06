@@ -15,6 +15,19 @@ if(!$conexion) { //Si no hay conexión
  * Verifica que haya una sesion creada*/
 comprobarSessionUsuario();
 
-require 'views/index.view.php';
+/**
+ * Obtenienendo los post's */
+$sentencia = $conexion->prepare("SELECT * FROM bebidas WHERE tipo_bebida = 'ron'");
+$sentencia->execute();
+
+$post = $sentencia;
+
+/**
+ * Verifica que haya post's*/
+if(!$post) {
+	header('Location: error.php');
+}
+
+require 'views/ron.view.php';
 
 ?>

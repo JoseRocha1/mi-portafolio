@@ -15,6 +15,6 @@ if(!$conexion) { //Si no hay conexión
  * Verifica que haya una sesion creada*/
 comprobarSessionUsuario();
 
-require 'views/index.view.php';
+require 'views/cat.view.php';
 
 ?>
