@@ -16,17 +16,11 @@ if(!$conexion) { //Si no hay conexión
 comprobarSessionAdmin();
 
 /**
- * Contar registros de usuarios*/
-$statement = $conexion->prepare('SELECT count(*) FROM usuarios');
+ * Selecciona todos los registros que hay en la tabla usuarios*/
+$statement = $conexion->prepare('SELECT * FROM usuarios WHERE id_rol = 1');
 $statement->execute();
-$cont_user = $statement->fetchColumn();
+$res = $statement->fetchAll();
 
-/**
- * Contar registros de bebidas*/
-$stm = $conexion->prepare('SELECT count(*) FROM bebidas');
-$stm->execute();
-$cont_drinks = $stm->fetchColumn();
-
-require '../views/dashboard.view.php';
+require '../views/admin.view.php';
 
 ?>

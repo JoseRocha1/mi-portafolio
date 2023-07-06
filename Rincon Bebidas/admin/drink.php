@@ -16,17 +16,9 @@ if(!$conexion) { //Si no hay conexión
 comprobarSessionAdmin();
 
 /**
- * Contar registros de usuarios*/
-$statement = $conexion->prepare('SELECT count(*) FROM usuarios');
-$statement->execute();
-$cont_user = $statement->fetchColumn();
+ * Obtenienendo los post's */
+$coctel = obtener_post($blog_config['post_por_pagina'], $conexion);
 
-/**
- * Contar registros de bebidas*/
-$stm = $conexion->prepare('SELECT count(*) FROM bebidas');
-$stm->execute();
-$cont_drinks = $stm->fetchColumn();
-
-require '../views/dashboard.view.php';
+require '../views/drink.view.php';
 
 ?>
