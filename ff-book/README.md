@@ -16,21 +16,14 @@ José Rocha
 7. Después de haber importado la base de datos abrimos una nueva pestaña y escribimos *localhost/ff-book/index.php* para visualizar el proyecto.
 
 ## Notas
-1. El usuario de phpMyAdmin tiene que ser *root* y *no debe de tener contraseña*, en caso de que el usuario y contraseña sean diferentes se tiene que modificar el archivo **config.php** que se encuentra dentro de la carpeta *admin/*.
-2. Las cuentas del proyecto son:
-   
-   **Usuario normal**
-   
-   *Correo:*
-   ejemplo@admin.com
-
-   *Contraseña:*
-   123
+1. El usuario de phpMyAdmin tiene que ser *root* y *no debe de tener contraseña*, en caso de que el usuario y contraseña sean diferentes se tiene que modificar el archivo **config.php** que se encuentra dentro de la carpeta *admin/*
+2. Para entrar al area del administrador se tiene que escribir la ruta *localhost/ff-book/login.php*
+3. La cuenta del proyecto es:
 
    **Administrador**
    
    *Correo:*
-   saul_rayados@live.com.mx
+   rodolfopuga16@gmail.com
 
    *Contraseña:*
    password
