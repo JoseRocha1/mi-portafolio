@@ -16,9 +16,10 @@ if(!$conexion) { //Si no hay conexión
 comprobarSession();
 
 /**
- * Obteniendo los libros*/
- $libros = obtener_libros($blog_config['libros_por_pagina'], $conexion);
+ * Obtiene las opiniones*/
+$coment = obtener_opiniones($blog_config['libros_por_pagina'], $conexion);
 
-require '../views/index_admin.view.php';
+
+require '../views/opiniones.view.php';
 
 ?>
