@@ -1,4 +1,4 @@
-## El Rincon de la Bebida
+## El Rincón de la Bebida
 
 ## Descripción
 Página web donde puedes aprender a preparar bebidas alcohólicas
