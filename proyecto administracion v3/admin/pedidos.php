@@ -11,22 +11,19 @@
 	<?php require 'header_basic.php'; ?> <!-- Header -->
 
 	<div class="container"> <!-- Contenedor Principal -->
-		<div class="admin"> <!-- Contenedor Secundario -->
-			<a href="#" class="btn btn-danger">Cerrar Sesión</a>
-			<div class="container-sm"> <!-- Contenedor de Configuraciones -->
-				<a href="prod.php">
-					<div class="box1"> <!-- Contenedor 1 -->
-						<i class="fas fa-shopping-basket"></i>
-						<h3>Productos</h3>
-					</div> <!-- Contenedor 1 -->
-				</a>
-				<a href="pedidos.php">
-					<div class="box2"> <!-- Contenedor 2 -->
-						<i class="fas fa-clipboard"></i>
-						<h3>Pedidos</h3>
-					</div> <!-- Contenedor 2 -->
-				</a>
-			</div> <!-- Contenedor de Configuraciones -->
+		<div class="ord_by"><br> <!-- Contenedor Secundario -->
+			<a href="setting_admin.php" class="btn btn-outline-secondary"><i class="fas fa-arrow-left"></i></a>
+			<div class="container-md">
+				<h2>Pedidos</h2><br>
+				<div class="container-fluid"><br> <!-- Contenedor Pedidos -->
+					<a href="new_ped.php">
+						<h5>Pedido i</h5>
+					</a>
+					<div class="le">
+						<label>Status: </label>
+					</div><br>
+				</div><br> <!-- Contenedor Pedidos -->
+			</div>
 		</div> <!-- Contenedor Secundario -->
 	</div> <!-- Contenedor Principal -->
 
