@@ -8,7 +8,7 @@ José Rocha
 
 ## Instalación
 1. Para abrir este proyecto se necesita tener instalado XAMPP: https://www.apachefriends.org/es/download.html
-2. Este proyecto tiene que estar dentro de *C:/xampp/htdocs*
+2. Este proyecto tiene que estar dentro de *C:/xampp/htdocs/*
 3. Una vez instalado XAMPP se tiene que abrir el panel de control de xampp y activar **Apache** y **MySQL**.
 4. Una vez activadas las opciones abrimos el navegador de nuestra preferencia y escribimos *localhost/phpmyadmin* para abrir la base de datos.
 5. Una vez abierto el panel de *phpMyAdmin* creamos una base de datos llamada **rincon_bebidas** del tipo **utf8_spanish_ci**.
