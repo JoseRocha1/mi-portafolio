@@ -11,21 +11,17 @@
 </head>
 <body>
 	<?php require 'header.php'; ?>
-	<div class="container"> <!-- Contenedor Principal-->
-		<div class="home"> <!-- Contenedor Inicio -->
-			<div class="slider"> <!-- Slider --></div> <!-- Slider -->
-			<h2>Categorías</h2><br>
-			<div class="botones">
-				<a href="cat.php">Ver todas las categorías</a>
-			</div><br>
-			<div class="grupo"> <!-- Capa 1-->
+	<div class="container"> <!-- Contenedor Principal -->
+		<div class="bebida"> <!-- Contenedor Categorias -->
+			<h2>Categorías</h2>
+			<div class="grupo"> <!-- Capa 1 -->
 				<div class="fila"> <!-- Capa 2 -->
 					<a href="ron.php" class="card"> <!-- Contenedor 1 -->
 						<img src="imagenes/ron.png" alt="RON">
 						<p>Ron</p>
 					</a> <!-- Contenedor 1 -->
 					<a href="vodka.php" class="card"> <!-- Contenedor 2 -->
-						<img src="imagenes/vodka.png" alt=VODKA>
+						<img src="imagenes/vodka.png" alt="VODKA">
 						<p>Vodka</p>
 					</a> <!-- Contenedor 2 -->
 					<a href="tequila.php" class="card"> <!-- Contenedor 3 -->
@@ -44,9 +40,33 @@
 						<img src="imagenes/vino.png" alt="VINO">
 						<p>Vino</p>
 					</a> <!-- Contenedor 6 -->
+					<a href="cognac.php" class="card"> <!-- Contenedor 7 -->
+						<img src="imagenes/cognac.png" alt="COGNAC">
+						<p>Cognac</p>
+					</a> <!-- Contenedor 7 -->
+					<a href="whiskey.php" class="card"> <!-- Contenedor 8 -->
+						<img src="imagenes/whiskey.png" alt="WHISKEY">
+						<p>Whiskey</p>
+					</a> <!-- Contenedor 8 -->
+					<a href="cerveza.php" class="card"> <!-- Contenedor 9 -->
+						<img src="imagenes/cerveza.png" alt="CERVEZA">
+						<p>Cerveza</p>
+					</a> <!-- Contenedor 9 -->
+					<a href="licor.php" class="card"> <!-- Contenedor 10 -->
+						<img src="imagenes/licor.png" alt="LICOR DE HIERBA">
+						<p>Licor de hierba</p>
+					</a> <!-- Contenedor 10 -->
+					<a href="brandy.php" class="card"> <!-- Contenedor 11 -->
+						<img src="imagenes/brandy.png" alt="BRANDY">
+						<p>Brandy</p>
+					</a> <!-- Contenedor 11 -->
+					<a href="mezcal.php" class="card"> <!-- Contenedor 12 -->
+						<img src="imagenes/mezcal.png" alt="MEZCAL">
+						<p>Mezcal</p>
+					</a> <!-- Contenedor 12 -->
 				</div> <!-- Capa 2 -->
 			</div> <!-- Capa 1 -->
-		</div> <!-- Contenedor Inicio -->
+		</div> <!-- Contenedor Categorias -->
 	</div> <!-- Contenedor Principal -->
 </body>
 </html>
