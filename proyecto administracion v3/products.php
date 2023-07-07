@@ -12,7 +12,6 @@
 
 	<div class="container"> <!-- Contenedor Principal -->
 		<div class="home"> <!-- Contenedor Secundario -->
-			<h2>Productos mas vendidos</h2>
 			<div class="small"> <!-- Contenedor Principal de los Productos -->
 				<a href="detail_1.php">
 					<div class="card"> <!-- Contenedor de los productos -->
@@ -41,7 +40,7 @@
 				<a href="detail_4.php">
 					<div class="card"> <!-- Contenedor de los productos -->
 						<img src="https://http2.mlstatic.com/D_NQ_NP_819806-MLM42058855092_062020-O.webp" alt="Producto 4">
-						<h5>Cargador Inalambrico Qi Y Base Universal Samsung iPhone Etc</h5>
+						<h5>Cargador Inalambrico Qi Y Base Universal Samsung, iPhone</h5>
 						<p>Precio: $144.70</p>
 						<button type="button" class="btn btn-danger">Agregar al carrito</button>
 					</div> <!-- Contenedor de los productos -->
@@ -57,8 +56,56 @@
 				<a href="#">
 					<div class="card"> <!-- Contenedor de los productos -->
 						<img src="https://http2.mlstatic.com/D_NQ_NP_657803-MLM48118378072_112021-O.webp" alt="Producto 6">
-						<h5>Power Bank Pila Bateria Portatil 10,000 mah Carga Rapida 1 hora</h5>
+						<h5>Power Bank Pila Bateria Portatil 10,000 mah</h5>
 						<p>Precio: $173.47</p>
+						<button type="button" class="btn btn-danger">Agregar al carrito</button>
+					</div> <!-- Contenedor de los productos -->
+				</a>
+				<a href="#">
+					<div class="card"> <!-- Contenedor de los productos -->
+						<img src="https://http2.mlstatic.com/D_NQ_NP_819081-MLM44175285942_112020-O.webp" alt="Producto 1">
+						<h5>Funda Cover Uso Rudo 3 En 1 Samsung Galaxy A10 A20 A30</h5>
+						<p>Precio: $69</p>
+						<button type="button" class="btn btn-danger">Agregar al carrito</button>
+					</div> <!-- Contenedor de los productos -->
+				</a>
+				<a href="#">
+					<div class="card"> <!-- Contenedor de los productos -->
+						<img src="https://http2.mlstatic.com/D_NQ_NP_706018-MLM42946709148_072020-O.webp" alt="Producto 2">
+						<h5>Cargador Tipo C Carga Rápida Usb Datos Celular 1hora</h5>
+						<p>Precio: $76.99</p>
+						<button type="button" class="btn btn-danger">Agregar al carrito</button>
+					</div> <!-- Contenedor de los productos -->
+				</a>
+				<a href="#">
+					<div class="card"> <!-- Contenedor de los productos -->
+						<img src="https://http2.mlstatic.com/D_NQ_NP_745775-MLM46522405341_062021-O.webp" alt="Producto 3">
+						<h5>Cable Tipo C Usb-c A Usb 2.0 Rudo Carga Rapida 1ho</h5>
+						<p>Precio: $46.99</p>
+						<button type="button" class="btn btn-danger">Agregar al carrito</button>
+					</div> <!-- Contenedor de los productos -->
+				</a>
+				<a href="#">
+					<div class="card"> <!-- Contenedor de los productos -->
+						<img src="https://http2.mlstatic.com/D_NQ_NP_812873-MLM43713845844_102020-O.webp" alt="Producto 4">
+						<h5>Bateria Galaxy Grand Prime G530 Sm-g531 Eb-bg530bbc</h5>
+						<p>Precio: $81</p>
+						<button type="button" class="btn btn-danger">Agregar al carrito</button>
+					</div> <!-- Contenedor de los productos -->
+				</a>
+				<a href="#">
+					<div class="card"> <!-- Contenedor de los productos -->
+						<img src="https://http2.mlstatic.com/D_NQ_NP_970005-MLM31384322814_072019-O.webp" alt="Producto 5">
+						<h5>Power Bank Adata Cargador Portatil Negra 20000mah</h5>
+						<p>Precio: $413,03</p>
+						<button type="button" class="btn btn-danger">Agregar al carrito</button>
+					</div> <!-- Contenedor de los productos -->
+				</a>
+				<a href="#">
+					<div class="card"> <!-- Contenedor de los productos -->
+						<img src="https://http2.mlstatic.com/D_NQ_NP_937939-MLM31369611868_072019-O.webp" alt="Producto 6">
+						<h5>Funda Slim Contra Golpes Samsung S7 S8 S9 S10 Plus Note 8 9</h5>
+						<p>Precio: $65</p>
 						<button type="button" class="btn btn-danger">Agregar al carrito</button>
 					</div> <!-- Contenedor de los productos -->
 				</a>
@@ -72,5 +119,3 @@
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
-
-<!--https://www.youtube.com/watch?v=XAnXSWJISZQ&ab_channel=TheCodingLab-->
