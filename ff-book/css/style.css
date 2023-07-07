@@ -1,1 +1,388 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
+body {
+	background-image: url(../imagenes/fondo.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.3rem;
+}
+
+/* Encabezado */
+header {
+	background-color: #a52a2a;
+	width: 100%;
+	height: 100px;
+}
+
+/* Logo */
+header .logo {
+	display: block;
+	float: left;
+	padding: 25px;
+	color: #fff;
+}
+
+header .logo a {
+	text-decoration: none;
+	color: #fff;
+}
+
+header .logo a:hover {
+	color: rgba(255, 255, 255, 0.6);
+}
+/* - - - - */
+
+/* Menú */
+header .nav {
+	width: 100%;
+	display: flex;
+}
+
+header nav ul {
+	list-style: none;
+	overflow: none;
+}
+
+header nav ul li {
+	float: left;
+	margin-left: 150px;
+}
+
+header nav ul li a {
+	border-radius: 5px;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	padding: 30px;
+	margin: 0 auto;
+}
+
+header nav ul li a:hover {
+	background-color: #c06969;
+}
+/* - - - - - - */
+
+/* Mensaje de error */
+.container .alert {
+	background-color: #ffdddd;
+	color: #000;
+	padding: 20px;
+}
+
+.container .closebtn {
+	float: right;
+	margin-left: 15px;
+	color: #000;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.container .closebtn:hover {
+	color: gray;
+}
+/* - - - - - - */
+
+/* Login */
+.container .login {
+	background-color: #a52a2a;
+	width: 30%;
+	border-radius: 10px;
+	margin: 100px auto;
+	padding: 20px;
+	color: #fff;
+}
+
+.container .login h2 {
+	text-align: center;
+}
+
+.container .login form .group-1,
+.container .login form .group-2 {
+	padding: 15px;
+}
+
+.container .login form .group-1 label,
+.container .login form .group-2 label {
+	display: block;
+	font-size: 1.3rem;
+}
+
+.container .login form .group-1 .form-control,
+.container .login form .group-2 .form-control {
+	width: 100%;
+	height: 34px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	padding: 8px;
+}
+
+.container .login form .group-1 .form-control:focus,
+.container .login form .group-2 .form-control:focus {
+	outline: 2px solid blue;
+}
+
+.container .login form .botones {
+	text-align: center;
+}
+
+.container .login form .botones .button {
+	background-color: #310c0c;
+	width: 50%;
+	height: 34px;
+	border: none;
+	border-radius: 8px;
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+.container .login form .botones .button:hover {
+	background-color: rgba(49, 12, 12, 0.6);
+	cursor: pointer;
+}
+/* - - - - - - */
+
+/* Contenedor Libros */
+.container .book .container-lg {
+	background-color: #dcdcdc;
+	width: 80%;
+	border: none;
+	border-radius: 10px;
+	margin: 50px auto;
+	padding: 10px;
+}
+
+.container .book .container-lg h2 {
+	text-align: center;
+}
+
+.container .book .container-lg .filters {
+	text-align: center;
+}
+
+.container .book .container-lg .filters .izquierdo,
+.container .book .container-lg .filters .centrado,
+.container .book .container-lg .filter .der,
+.container .book .container-lg .filters .derecho {
+	display: inline-block;
+	padding: 10px;
+	margin: 10px;
+}
+
+.container .book .container-lg .filters .izquierdo {
+	float: left;
+}
+
+.container .book .container-lg .filters .der {
+	float: right;
+}
+
+.container .book .container-lg .filters .derecho {
+	float: right;
+	margin-left: 150px;
+}
+
+/* Contenedor de Tarjeta Libros */
+.container .book .container-lg table {
+	width: 90%;
+	color: #000;
+	margin: 60px auto;
+}
+
+.container .book .container-lg table th {
+	background-color: #2986cc;
+	border-bottom: 2px solid #000;
+	font-size: 1.2rem;
+}
+
+.container .book .container-lg table td {
+	background-color: #fff;
+}
+
+.container .book .container-lg table th,
+.container .book .container-lg table td {
+	padding: 10px;
+	text-align: center;
+}
+
+.container .book .container-lg table a {
+	text-decoration: none;
+	color: orangered;
+}
+
+.container .book .container-lg table a:hover {
+	color: rgba(255, 69, 0, 0.6);
+}
+/* - - - - - - */
+
+/* Contenedor Comentarios */
+.container .op .container-sm {
+	background-color: #dcdcdc;
+	width: 50%;
+	border: none;
+	border-radius: 10px;
+	padding: 20px;
+	margin: 50px auto;
+}
+
+.container .op .container-sm h2 {
+	text-align: center;
+}
+
+.container .op .container-sm form .form-group,
+.container .op .container-sm form .form-group-2 {
+	display: flex;
+}
+
+.container .op .container-sm form .form-group label,
+.container .op .container-sm form .form-group-2 label,
+.container .op .container-sm form .group-5 label {
+	display: block;
+	font-size: 1.3rem;
+}
+
+.container .op .container-sm form .form-group .group-1,
+.container .op .container-sm form .form-group-2 .group-3 {
+	float: left;
+	padding: 5px;
+	margin: 0 auto;
+}
+
+.container .op .container-sm form .form-group .group-2,
+.container .op .container-sm form .form-group-2 .group-4 {
+	float: right;
+	padding: 5px;
+	margin: 0 auto;
+}
+
+.container .op .container-sm form .group-5 {
+	text-align: center;
+}
+
+.container .op .container-sm form .form-group .group-1 .form-control,
+.container .op .container-sm form .form-group .group-2 .form-control,
+.container .op .container-sm form .form-group-2 .group-3 .form-control,
+.container .op .container-sm form .form-group-2 .group-4 .form-control {
+	width: 100%;
+	height: 34px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	padding: 8px;
+}
+
+.container .op .container-sm form .form-group .group-1 .form-control:focus,
+.container .op .container-sm form .form-group .group-2 .form-control:focus,
+.container .op .container-sm form .form-group-2 .group-3 .form-control:focus,
+.container .op .container-sm form .form-group-2 .group-4 .form-control:focus,
+.container .op .container-sm form .group-5 textarea:focus {
+	outline: 2px solid blue;
+}
+
+.container .op .container-sm form .group-5 textarea {
+	width: 90%;
+	height: 150px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	padding: 8px;
+	min-width: 90%;
+	max-width: 90%;
+	min-height: 150px;
+	max-height: 250px;
+}
+
+.container .op .container-sm form .group-5 label {
+	margin-right: 490px;
+}
+
+.container .op .container-sm form .botones {
+	text-align: center;
+}
+
+.container .op .container-sm form .botones .button {
+	background-color: #0d6efd;
+	width: 40%;
+	height: 34px;
+	border: none;
+	border-radius: 8px;
+	color: #fff;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+.container .op .container-sm form .botones .button:hover {
+	background-color: rgba(13, 110, 253, 0.6);
+}
+/* - - - - - - */
+
+@media screen and (max-width: 800px) {
+	/* Contenedor Libros */
+	.container .book .container-lg {
+		width: 90%;
+		margin: 50px auto;
+	}
+
+	.container .book .container-lg .filters .izquierdo,
+	.container .book .container-lg .filters .centrado,
+	.container .book .container-lg .filters .derecho,
+	.container .book .container-lg .filters .der {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.container .book .container-lg h2 {
+		margin-top: 300px;
+	}
+	/* - - - - - - */
+
+	/* Contenedor Comentarios */
+	.container .op .container-sm {
+		width: 90%;
+	}
+
+	.container .op .container-sm form .form-group,
+	.container .op .container-sm form .form-group-2 {
+		display: block;
+	}
+
+	.container .op .container-sm form .form-group .group-1,
+	.container .op .container-sm form .form-group .group-2,
+	.container .op .container-sm form .form-group-2 .group-3,
+	.container .op .container-sm form .form-group-2 .group-4 {
+		width: 100%;
+	}
+
+	.container .op .container-sm form .group-5 {
+		margin: 230px auto;
+	}
+
+	.container .op .container-sm form .group-5 textarea {
+		width: 100%;
+	}
+
+	.container .op .container-sm form .botones {
+		margin-top: -200px;
+	}
+
+	.container .op .container-sm form .botones input[type="submit"] {
+		width: 80%;
+		height: 40px;
+	}
+	/* - - - - - - */
+
+	/* Contenedor Login */
+	.container .login {
+		width: 95%;
+	}
+	/* - - - - - - */
+}

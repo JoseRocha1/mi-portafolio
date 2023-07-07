@@ -1,0 +1,438 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #262E3F;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2rem;
+	color: #fff;
+}
+
+/* Menú */
+header .sidebar {
+	position: fixed;
+	width: 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background-color: #0F172A;
+	overflow-x: hidden;
+	transition: 0.4s;
+	padding: 1rem 0;
+	box-sizing: border-box;
+	overflow-y: hidden; /* Quita Scroll Vertical */
+}
+
+header .sidebar .boton-cerrar {
+	position: absolute;
+	display: block;
+	width: 32px;
+	height: 32px;
+	top: 0.5rem;
+	right: 1rem;
+	font-size: 2rem;
+	padding: 0;
+	line-height: 1.2rem;
+	margin: 0;
+	text-align: center;
+	vertical-align: top;
+}
+
+header .sidebar ul,
+header .sidebar li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+header .sidebar ul {
+	width: 80%;
+	display: block;
+	margin: 4rem auto;
+	min-width: 200px;
+}
+
+header .sidebar a {
+	display: block;
+	font-size: 120%;
+	color: #fff;
+	text-decoration: none;
+	padding: 20px;
+}
+
+header .sidebar a:hover {
+	color: #94c2e5;
+}
+
+header .sidebar .logo {
+	text-align: center;
+}
+
+header .sidebar .logo h2 {
+	padding: 5px;
+}
+
+.container .abrir-cerrar {
+	color: #fff;
+	font-size: 4rem;
+}
+
+.container #abrir:hover,
+.container #cerrar:hover {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.container #cerrar {
+	display: none;
+}
+/* - - - - - - */
+
+/* Mensaje de error */
+.container .alert {
+	background-color: #ffdddd;
+	color: #000;
+	padding: 20px;
+}
+
+.container .closebtn {
+	float: right;
+	margin-left: 15px;
+	color: #000;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.container .closebtn:hover {
+	color: gray;
+}
+/* - - - - - - */
+
+/* Contenedor Panel de Control */
+.container .admin {
+	width: 100%;
+}
+
+.container .admin .container-sm {
+	background-color: #dcdcdc;
+	width: 60%;
+	border: none;
+	border-radius: 10px;
+	color: #000;
+	margin: 0 auto;
+	
+}
+
+.container .admin .container-sm h2 {
+	text-align: center;
+	margin-top: 100px;
+	padding: 30px;
+}
+
+.container .admin .container-sm .botones {
+	float: right;
+}
+
+.container .admin .container-sm .botones .button {
+	background-color: #dc3545;
+	width: 50%;
+	height: 34px;
+	border: none;
+	border-radius: 8px;
+	text-decoration: none;
+	color: #fff;
+	padding: 10px;
+	margin-right: 50px;
+}
+
+.container .admin .container-sm .botones .button:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.container .admin .container-sm .botones .btn {
+	background-color: #0d6efd;
+	width: 50%;
+	height: 34px;
+	border: none;
+	border-radius: 8px;
+	text-decoration: none;
+	color: #fff;
+	padding: 10px;
+	margin-right: 20px;
+}
+
+/* Tabla */
+.container .admin .container-sm table {
+	width: 90%;
+	color: #000;
+	margin: 60px auto;
+}
+
+.container .admin .container-sm table th {
+	background-color: #2986cc;
+	border-bottom: 2px solid #000;
+	font-size: 1rem;
+}
+
+.container .admin .container-sm table td {
+	background-color: #fff;
+}
+
+.container .admin .container-sm table th,
+.container .admin .container-sm table td {
+	padding: 10px;
+	text-align: center;
+}
+
+.container .admin .container-sm table td .fa-pen,
+.container .admin .container-sm table td .fa-trash-alt {
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+
+.container .admin .container-sm table td .fa-pen {
+	color: #ffa500;
+}
+
+.container .admin .container-sm table td .fa-pen:hover {
+	color: rgba(255, 165, 0, 0.6);
+}
+
+.container .admin .container-sm table td .fa-trash-alt {
+	color: #ff0000;
+}
+
+.container .admin .container-sm table td .fa-trash-alt:hover {
+	color: rgba(255, 0, 0, 0.6);
+}
+/* - - - - - - */
+
+/* Agregar / Editar Libros */
+.container .edicion {
+	width: 100%;
+}
+
+.container .edicion .container-sm {
+	background-color: #a52a2a;
+	width: 30%;
+	border: none;
+	border-radius: 10px;
+	margin: 60px auto;
+	padding: 20px;
+}
+
+.container .edicion .container-sm h2 {
+	text-align: center;
+}
+
+.container .edicion .container-sm form label {
+	display: block;
+	font-size: 1.3rem;
+}
+
+.container .edicion .container-sm form .group-1,
+.container .edicion .container-sm form .group-2,
+.container .edicion .container-sm form .group-3,
+.container .edicion .container-sm form .group-4,
+.container .edicion .container-sm form .group-5,
+.container .edicion .container-sm form .group-6 {
+	padding: 12px;
+	text-align: center;
+}
+
+.container .edicion .container-sm form .group-1 .form-control,
+.container .edicion .container-sm form .group-2 .form-control,
+.container .edicion .container-sm form .group-3 .form-control,
+.container .edicion .container-sm form .group-4 .form-control,
+.container .edicion .container-sm form .group-5 .form-control,
+.container .edicion .container-sm form .group-6 .form-control {
+	width: 90%;
+	height: 34px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	padding: 8px; /* Espacio */
+}
+
+.container .edicion .container-sm form .group-1 .form-control:focus,
+.container .edicion .container-sm form .group-2 .form-control:focus,
+.container .edicion .container-sm form .group-3 .form-control:focus,
+.container .edicion .container-sm form .group-4 .form-control:focus,
+.container .edicion .container-sm form .group-5 .form-control:focus,
+.container .edicion .container-sm form .group-6 .form-control:focus {
+	outline: 2px solid blue;
+}
+
+.container .edicion .container-sm form .botones .button {
+	float: left;
+	background-color: #ff0000;
+	text-decoration: none;
+	width: 30%;
+	height: 34px;
+	border: none;
+	border-radius: 10px;
+	text-align: center;
+	color: #fff;
+	padding: 5px;
+	font-size: 1.2rem;
+	cursor: pointer;
+
+}
+
+.container .edicion .container-sm form .botones .button:hover {
+	background-color: rgba(255, 0, 0, 0.6);
+}
+
+.container .edicion .container-sm form .botones .btn {
+	float: right;
+	background-color: #138808;
+	width: 30%;
+	height: 34px;
+	border: none;
+	border-radius: 10px;
+	text-align: center;
+	color: #fff;
+	padding: 5px;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+.container .edicion .container-sm form .botones .btn:hover {
+	background-color: rgba(19, 136, 8, 0.6);
+}
+/* - - - - - - */
+
+/* Contenedor Opiniones */
+.container .opp .container-sm {
+	background-color: #dcdcdc;
+	width: 50%;
+	border: none;
+	border-radius: 10px;
+	margin: 70px auto;
+	color: #000;
+	padding: 20px;
+}
+
+.container .opp .container-sm h2 {
+	text-align: center;
+}
+
+.container .opp .container-sm .cont-1 {
+	background-color: #fff;
+	width: 90%;
+	border: none;
+	border-radius: 10px;
+	margin: 20px auto;
+	padding: 20px;
+}
+
+.container .opp .container-sm .cont-1 a {
+	text-decoration: none;
+	color: #000;
+	cursor: pointer;
+}
+
+.container .opp .container-sm .cont-1 a:hover {
+	color: rgba(0, 0, 0, 0.4);
+}
+
+.container .view .container-sm {
+	background-color: #dcdcdc;
+	width: 50%;
+	border: none;
+	border-radius: 10px;
+	margin: 60px auto;
+	color: #000;
+	padding: 20px;
+}
+
+.container .view .container-sm h2 {
+	text-align: center;
+}
+
+.container .view .container-sm .form-group,
+.container .view .container-sm .form-group-2 {
+	display: flex;
+	margin-top: 20px;
+}
+
+.container .view .container-sm .form-group label,
+.container .view .container-sm .form-group-2 label,
+.container .view .container-sm .group-5 label {
+	display: block;
+	font-size: 1.3rem;
+}
+
+.container .view .container-sm .form-group .group-1,
+.container .view .container-sm .form-group-2 .group-3 {
+	float: left;
+	padding: 5px;
+	margin: 0 auto;
+}
+
+.container .view .container-sm .form-group .group-2,
+.container .view .container-sm .form-group-2 .group-4 {
+	float: right;
+	padding: 5px;
+	margin: 0 auto;
+}
+
+.container .view .container-sm .group-5 {
+	text-align: center;
+}
+
+.container .view .container-sm .form-group .group-1 .form-control,
+.container .view .container-sm .form-group .group-2 .form-control,
+.container .view .container-sm .form-group-2 .group-3 .form-control,
+.container .view .container-sm .form-group-2 .group-4 .form-control {
+	background-color: lightgray;
+	width: 100%;
+	height: 34px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	padding: 8px;
+}
+
+.container .view .container-sm .group-5 textarea {
+	background-color: lightgray;
+	width: 90%;
+	height: 250px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	padding: 8px;
+	min-width: 90%;
+	max-width: 90px;
+	min-height: 250px;
+	max-height: 400px;
+}
+
+.container .view .container-sm .group-5 label {
+	margin-right: 490px;
+}
+/* - - - - - - */
+
+@media screen and (max-width: 800px) {
+	/* Menú */
+	header .sidebar {
+		width: 80%;
+	}
+	/* - - - - - - */
+
+	/* Tabla */
+	.container .admin .container-sm {
+		width: 95%;
+	}
+
+	.container .edicion .container-sm {
+		width: 95%;
+	}
+}
+/* - - - - - - */
