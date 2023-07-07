@@ -10,35 +10,38 @@
 	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body style="background-color: #262E3F;">
+<body>
 	<div class="container"> <!-- Contenedor Principal -->
-		<div class="login"> <!-- Contenedor Login -->
-			<?php if(!empty($errores)): ?>
-				<div class="alert" style="background-color: #f44336; padding: 20px; color: #fff;">
-					<?php echo $errores; ?>
-				</div>
-			<?php endif; ?>
+		<div class="new_ticket"> <!-- Contenedor Nueva Entrada -->
+			<div class="boton"> <!-- Botón -->
+				<a href="entrance.php" class="btn btn-secondary"><i class="fas fa-arrow-left"></i></a>
+			</div> <!-- Botón -->
 			<div class="container-sm"> <!-- Contenedor Formulario -->
-				<div class="logo"> <!-- Logo -->
-					<img src="images/image.png">
-				</div> <!-- Logo -->
+				<h2>Salida</h2>
 				<form method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
+					<input type="hidden" value="<?php echo $post['id']; ?>" name="id">
 					<div class="group-1"> <!-- Grupo 1 -->
 						<div class="mb-3">
-							<input type="text" name="username" class="form-control" placeholder="Usuario">
-						</div> <!-- Grupo 1 -->
-					</div>
+							<input type="text" name="username" class="form-control" value="<?php echo $post['user_client']; ?>" disabled>
+						</div>
+					</div> <!-- Grupo 1 -->
 					<div class="group-2"> <!-- Grupo 2 -->
 						<div class="mb-3">
-							<input type="password" name="pass" class="form-control" placeholder="Contraseña">
+							<input type="password" name="pass" class="form-control" value="<?php echo $post['password_client']; ?>" disabled>
 						</div>
 					</div> <!-- Grupo 2 -->
+					<div class="group-3"> <!-- Grupo 3 -->
+						<input type="time" name="exit" value="<?php echo $post['exit_movements']; ?>">
+					</div> <!-- Grupo 3 -->
+					<div class="texto-1"> <!-- Texto -->
+						<h5>Entrada: <?php echo $post['entrance_movements']; ?></h5>
+					</div><br> <!-- Texto -->
 					<div class="boton"> <!-- Botón -->
-						<input type="submit" class="btn btn-primary" value="Inciar sesión">
-					</div> <!-- Botón -->
-				</form><br>
+						<input type="submit" class="btn btn-primary" value="Checar salida">
+					</div><br><br> <!-- Botón -->
+				</form>
 			</div> <!-- Contenedor Formulario -->
-		</div> <!-- Contenedor Login -->
+		</div> <!-- Contenedor Nueva Entrada -->
 	</div> <!-- Contenedor Principal -->
 
 	<!-- Librerias -->
