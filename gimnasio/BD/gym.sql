@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-11-2022 a las 07:34:23
--- Versión del servidor: 10.4.25-MariaDB
--- Versión de PHP: 7.4.30
+-- Tiempo de generación: 12-07-2023 a las 01:18:23
+-- Versión del servidor: 10.4.28-MariaDB
+-- Versión de PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -29,13 +29,20 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `admin` (
   `id` int(11) NOT NULL,
-  `name_admin` varchar(200) COLLATE utf8_spanish2_ci NOT NULL,
-  `last_name_admin` varchar(200) COLLATE utf8_spanish2_ci NOT NULL,
-  `email_admin` varchar(200) COLLATE utf8_spanish2_ci NOT NULL,
-  `user_admin` varchar(100) COLLATE utf8_spanish2_ci NOT NULL,
-  `password_admin` varchar(100) COLLATE utf8_spanish2_ci NOT NULL,
+  `name_admin` varchar(200) NOT NULL,
+  `last_name_admin` varchar(200) NOT NULL,
+  `email_admin` varchar(200) NOT NULL,
+  `user_admin` varchar(100) NOT NULL,
+  `password_admin` varchar(100) NOT NULL,
   `fecha` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `admin`
+--
+
+INSERT INTO `admin` (`id`, `name_admin`, `last_name_admin`, `email_admin`, `user_admin`, `password_admin`, `fecha`) VALUES
+(5, 'José', 'Rocha', 'saul_rayados@live.com.mx', 'admin', 'password', '2023-07-11 23:17:20');
 
 -- --------------------------------------------------------
 
@@ -45,14 +52,14 @@ CREATE TABLE `admin` (
 
 CREATE TABLE `clients` (
   `id` int(11) NOT NULL,
-  `name_client` varchar(200) COLLATE utf8_spanish2_ci NOT NULL,
-  `last_name_client` varchar(200) COLLATE utf8_spanish2_ci NOT NULL,
-  `email_client` varchar(200) COLLATE utf8_spanish2_ci NOT NULL,
-  `method_client` varchar(100) COLLATE utf8_spanish2_ci NOT NULL,
-  `type_plan` varchar(100) COLLATE utf8_spanish2_ci NOT NULL,
-  `user_client` varchar(100) COLLATE utf8_spanish2_ci NOT NULL,
-  `password_client` varchar(100) COLLATE utf8_spanish2_ci NOT NULL,
-  `status_client` varchar(50) COLLATE utf8_spanish2_ci NOT NULL,
+  `name_client` varchar(200) NOT NULL,
+  `last_name_client` varchar(200) NOT NULL,
+  `email_client` varchar(200) NOT NULL,
+  `method_client` varchar(100) NOT NULL,
+  `type_plan` varchar(100) NOT NULL,
+  `user_client` varchar(100) NOT NULL,
+  `password_client` varchar(100) NOT NULL,
+  `status_client` varchar(50) NOT NULL,
   `fecha` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
@@ -64,10 +71,10 @@ CREATE TABLE `clients` (
 
 CREATE TABLE `movements` (
   `id` int(11) NOT NULL,
-  `user_client` varchar(100) COLLATE utf8_spanish2_ci NOT NULL,
-  `password_client` varchar(100) COLLATE utf8_spanish2_ci NOT NULL,
+  `user_client` varchar(100) NOT NULL,
+  `password_client` varchar(100) NOT NULL,
   `entrance_movements` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `exit_movements` varchar(255) COLLATE utf8_spanish2_ci NOT NULL
+  `exit_movements` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
 -- --------------------------------------------------------
@@ -78,11 +85,11 @@ CREATE TABLE `movements` (
 
 CREATE TABLE `pay` (
   `id` int(11) NOT NULL,
-  `name_client` varchar(200) COLLATE utf8_spanish2_ci NOT NULL,
-  `type_plan` varchar(100) COLLATE utf8_spanish2_ci NOT NULL,
+  `name_client` varchar(200) NOT NULL,
+  `type_plan` varchar(100) NOT NULL,
   `price_plan` int(11) NOT NULL,
   `card_pay` int(11) NOT NULL,
-  `expiration_pay` varchar(50) COLLATE utf8_spanish2_ci NOT NULL,
+  `expiration_pay` varchar(50) NOT NULL,
   `cvv_pay` int(11) NOT NULL,
   `fecha_pay` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
@@ -95,7 +102,7 @@ CREATE TABLE `pay` (
 
 CREATE TABLE `plan` (
   `id` int(11) NOT NULL,
-  `plan_plan` varchar(100) COLLATE utf8_spanish2_ci NOT NULL,
+  `plan_plan` varchar(100) NOT NULL,
   `price_plan` int(11) NOT NULL,
   `fecha` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
@@ -151,7 +158,7 @@ ALTER TABLE `plan`
 -- AUTO_INCREMENT de la tabla `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `clients`
